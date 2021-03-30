@@ -9,6 +9,9 @@ def circle_area(r):
 
 
 if __name__ == '__main__':
-    r = int(input("Enter the radius of the circle: "))
-    area = circle_area(r)
-    print(area)
+    try:
+        r = int(input("Enter the radius of the circle: "))
+        area = circle_area(r)
+        print(area)
+    except ValueError:
+        print(" You need to enter a value for radius")
