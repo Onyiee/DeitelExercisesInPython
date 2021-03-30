@@ -5,8 +5,6 @@
 # time) and determines whether the second value in each pair is a multiple of the first.
 
 def is_multiple(first_number, second_number):
-    # first_number = int(input("Enter an integer: "))
-    # second_number = int(input("Enter another number: "))
     if second_number % first_number == 0:
         return True
 
@@ -15,4 +13,6 @@ def is_multiple(first_number, second_number):
 
 
 if __name__ == '__main__':
-    print(is_multiple())
+    first_number = int(input("Enter an integer: "))
+    second_number = int(input("Enter another number: "))
+    print(is_multiple(first_number, second_number))
