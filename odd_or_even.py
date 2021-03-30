@@ -5,14 +5,24 @@
 #  and determines whether each is even or odd.
 
 
-def is_even():
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+
+if __name__ == '__main__':
     number = 1
+
     while number != -1:
-        number = int(input("Enter a number: "))
-        if number % 2 == 0:
-            print("True. \n It is an even number")
-        else:
-            print("False. \n It is an odd number")
-
-
-print(is_even())
+        try:
+            number = int(input("Enter a number: "))
+            ans = is_even(number)
+            if ans == True:
+                print("True. \n It is even ")
+            else:
+                print("False. \n It is odd")
+        except ValueError:
+            print("You need to enter a number")
