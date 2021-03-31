@@ -18,10 +18,10 @@ def minimum3(first_number, second_number, third_number):
 
 if __name__ == '__main__':
     try:
-        first_number = int(input("Enter a number: "))
-        second_number = int(input("Enter a second number: "))
-        third_number = int(input("Enter a third number: "))
+        first_number = float(input("Enter a number: "))
+        second_number = float(input("Enter a second number: "))
+        third_number = float(input("Enter a third number: "))
         min_number = (minimum3(first_number, second_number, third_number))
         print(f"The minimum number is {min_number}")
     except ValueError:
-        print("This method accepts only numbers.Enter a number.")
+        print("This program accepts only numbers.Enter a number.")
