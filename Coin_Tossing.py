@@ -8,9 +8,8 @@ from random import randint
 
 
 def coin_tossing():
-    for _ in range(1):
-        value = randint(0, 1)
-        if value == 1:
-            return "HEADS"
-        else:
-            return "TAILS"
+    value = randint(0, 1)
+    if value == 1:
+        return "HEADS"
+    else:
+        return "TAILS"
