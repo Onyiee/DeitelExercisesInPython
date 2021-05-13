@@ -26,9 +26,6 @@ class Car_park_charges_calculator:
         return self.charges_per_hour
 
     def calculate_charges(self, hours_parked):
-        # total_charges = hours_parked * self.charges_per_hour
-        # customers = []
-        # self.set_fee_for_hours_parked()
         if hours_parked == 3:
             self.total_charges = 2.00
             print(self.total_charges)
@@ -52,14 +49,4 @@ class Car_park_charges_calculator:
 
     def get_charges(self):
         return self.total_charges
-        # self.get_fee_for_hours_parked()
-        # self.set_hours_parked(4)
-        # self.get_fee_for_hours_parked()
-        # total_charges = hours_parked * self.charges_per_hour
-        # print(total_charges)
 
-        # charges_per_hour = 0.50
-        # for i in customers:
-        # hours_parked = int(input("Enter the number of hours the car was parked for: "))
-        # total_charges = hours_parked * self.charges_per_hour
-        # print(f"the total charges to be paid is {total_charges}")

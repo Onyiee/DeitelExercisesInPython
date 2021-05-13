@@ -4,10 +4,3 @@
 # the result.
 
 
-def minimum3(numbers):
-    min_number = numbers[0]
-    for i in numbers:
-        if i < min_number:
-            min_number = i
-    return min_number
-
